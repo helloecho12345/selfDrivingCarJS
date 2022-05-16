@@ -1,0 +1,13 @@
+body{
+  /* margin:0 will get rid of the orange frame */
+  margin:0; 
+  background:darkgray;
+  /* need to hide overflow or else scroll bar appears if canvas is too big */
+  overflow:hidden;
+  /* want everything to align to the center of the page */
+  text-align:center
+}
+
+#myCanvas{
+  background:lightgray;
+}
