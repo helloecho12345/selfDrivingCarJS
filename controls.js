@@ -22,5 +22,16 @@ class Controls{
           break;
       }
     }
+    document.onkeyup=(event)=>{
+      switch(event.key){
+        case "ArrowLeft":
+          this.left=false;
+        case "ArrowRight":
+          this.right=false;
+        case "ArrowUp":
+          this.forward=false;
+        case "ArrowDown":
+          this.reverse=false;
+          break;
   }
 }
