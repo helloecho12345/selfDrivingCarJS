@@ -9,6 +9,7 @@ class Controls{
   }
 // # in front of method makes it a private method so you can't access it outside of the Controls class
   #addKeyboardListeners(){
+    // using arrow function below keeps this referring to this in constructor and not this of the function(event)
     document.onkeydown=(event)=>{
       switch(event.key){
         case "ArrowLeft":
@@ -21,6 +22,7 @@ class Controls{
           this.reverse=true;
           break;
       }
+      console.table(this);
     }
     document.onkeyup=(event)=>{
       switch(event.key){
@@ -34,4 +36,7 @@ class Controls{
           this.reverse=false;
           break;
   }
+  console.table(this);
+}
+}
 }
